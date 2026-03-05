@@ -12,11 +12,6 @@ cursor.execute('''
     )
 ''')
 
-def add_todo():
-    task=input('Write to do: ')
-    cursor.execute("INSERT INTO list (todo, status) VALUES (?, ?)", (task, 'Pending'))
-    connection.commit()
-
 def remove_todo():
     cursor.execute("SELECT * FROM list")
     all_tasks = cursor.fetchall()
