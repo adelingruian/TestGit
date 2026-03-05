@@ -1,0 +1,1 @@
+print("Roli a scris aici")
