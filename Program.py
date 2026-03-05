@@ -76,3 +76,5 @@ while True:
      case _:
          print('Invalid input')
 connection.close()
+
+print("Am schimbat si eu ceva")
