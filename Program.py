@@ -1,16 +1,7 @@
 import sqlite3
 from unittest import case
 
-connection=sqlite3.connect('todo.db')
-cursor=connection.cursor()
 
-cursor.execute('''
-    CREATE TABLE IF NOT EXISTS list (
-        id INTEGER PRIMARY KEY AUTOINCREMENT,
-        todo TEXT,
-        status INTEGER
-    )
-''')
 
 def remove_todo():
     cursor.execute("SELECT * FROM list")
